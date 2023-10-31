@@ -1,0 +1,124 @@
+html{
+    background-color: #e4e9fd;
+    font-family: "helvetica neue";
+    background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+    min-height: 1000px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch; 
+    margin: 0;
+    padding: 0;
+    min-height: 95vh;
+}
+
+main {
+    flex-grow: 1; /* Allow main content to grow and push the footer to the bottom */
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.link{
+    padding: 1% 1% 1% 0.5% ;
+    color: #a683e3;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#heading{
+    background-color: #a683e3;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: #fff;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 5px;
+    height: 70px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#workItems{
+    background-color: aliceblue;
+    justify-content: flex-start;
+    /* height: 75px;  */
+}
+
+form{
+    height: 80%;
+}
+
+#addItemsForm{
+   background-color: aliceblue;;
+   height: 70px; 
+}
+
+
+input[type="checkbox"],.checkbox {
+    margin-left: 20px;
+}
+
+p,.inputField{
+   padding: 10px; 
+   margin-left: 20px;
+   font-size: large;
+}
+
+
+input[type="text"]{
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 200;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    height: 55px; 
+}
+input[type="text"]:focus{
+    border-bottom: 3px solid #a683e3;
+}
+
+button[type="submit"]{
+    font-size: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    background-color: #a683e3;
+    border: none;
+    color: #fff;
+    width: 40px;
+}
+
+/* Strike through the paragraph when chekbox is checked */
+input[type="checkbox"]:checked + p {
+    text-decoration: line-through;
+    text-decoration-color: #a683e3;
+    text-decoration-thickness: 2.5px;
+  }
+
+  footer{
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px;
+}
+  
+
+
+

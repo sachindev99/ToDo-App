@@ -1,0 +1,33 @@
+<%-include("partials/header.ejs") %>
+
+
+   
+        <div class="box" id="heading">
+            <h1><%= heading %></h1>
+
+          
+        </div>
+
+        <% if (locals.listItems.length > 0) { %>
+            <% for (let i = 0; i < locals.listItems.length; i++) { %>
+                <div class="box" id="workItems">
+                <input type="checkbox">
+                <p class="inputField"><%= locals.listItems[i] %></p>
+                </div>
+            <% } %>
+        <% } %>
+              
+        
+  
+        <div class="box" id="addItemsForm">
+            <form action="/" method="post">
+                <input type="text" autocomplete="off"  name="newItem" placeholder="New Item">
+                
+                <button type="submit" name="title" value="<%= heading %>">+</button>
+
+            </form>
+        </div>
+
+
+
+<%- include("partials/footer.ejs") %>
